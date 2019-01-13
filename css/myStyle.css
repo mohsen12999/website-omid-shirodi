@@ -1,0 +1,28 @@
+nav.navbar div.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+div.menu-container div.logo {
+    float: right !important;
+}
+
+div.menu-container button.navbar-toggle {
+    float: left !important;
+}
+
+div.collapse.navbar-collapse ul li {
+    float: right !important;
+    text-align: right;
+}
+
+div.collapse.navbar-collapse ul li a {
+    line-height: 28px !important;
+}
+
+div.collapse.navbar-collapse ul li strong {
+    display: block !important;
+}
+div.collapse.navbar-collapse ul li.active strong {
+    font-size: large !important;
+}
