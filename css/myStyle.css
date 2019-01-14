@@ -1,4 +1,4 @@
-nav.navbar div.container{
+nav.navbar div.container {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -23,6 +23,48 @@ div.collapse.navbar-collapse ul li a {
 div.collapse.navbar-collapse ul li strong {
     display: block !important;
 }
+
 div.collapse.navbar-collapse ul li.active strong {
     font-size: large !important;
 }
+
+div.collapse.navbar-collapse ul li.active {
+    text-shadow: 0 0 5px gray;
+}
+
+div.promo-block.parallax-window ul li {
+    text-shadow: 0 0 3px lightblue;
+}
+
+.header .navbar-toggle {
+    margin: 0 !important;
+}
+
+.service::after {
+    content: "";
+    background-image: url('../img/cover/20190104-cover-500.jpg');
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+}
+
+.service{
+    text-align: center !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#music2::after{
+    background-image: url('../img/cover/Dele\ Daryaie-Omid\ Shiroudi-700.jpg');
+}
+#music3::after{
+    background-image: url('../img/cover/sheydaie-700.jpg');
+}
+/* .service .service-element{
+    text-align: center !important;
+} */
