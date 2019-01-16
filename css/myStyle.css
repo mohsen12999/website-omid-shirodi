@@ -53,18 +53,62 @@ div.promo-block.parallax-window ul li {
     background-size: cover;
 }
 
-.service{
+.service {
     text-align: center !important;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-#music2::after{
+#music1::after {
+    background-image: url('../img/cover/20190104-cover-500.jpg');
+}
+
+#music2::after {
+    background-image: url('../img/cover/Arezoo-Omid\ Shiroudi-700.jpg');
+}
+
+#music3::after {
     background-image: url('../img/cover/Dele\ Daryaie-Omid\ Shiroudi-700.jpg');
 }
-#music3::after{
+
+#music4::after {
+    background-image: url('../img/cover/ghadam\ mizanam-700.jpg');
+}
+
+#music5::after {
+    background-image: url('../img/cover/hesse\ khoob-omid\ shiroudi-500.jpg');
+}
+
+#music6::after {
+    background-image: url('../img/cover/IMG_6135-3m-600.jpg');
+}
+
+#music7::after {
+    background-image: url('../img/cover/Javab\ Mosbat-Omid\ Shiroudi-500.jpg');
+}
+
+#music8::after {
+    background-image: url('../img/cover/navahi-20181231-02-500.jpg');
+}
+
+#music9::after {
+    background-image: url('../img/cover/royaye\ ghashang-700.jpg');
+}
+
+#music10::after {
     background-image: url('../img/cover/sheydaie-700.jpg');
 }
+
+#music11::after {
+    background-image: url('../img/cover/20190104-cover-500.jpg');
+}
+
+#music12::after {
+    background-image: url('../img/cover/20190104-cover-500.jpg');
+}
+
+
+
 /* .service .service-element{
     text-align: center !important;
 } */
