@@ -99,13 +99,10 @@ div.promo-block.parallax-window ul li {
     background-image: url('../img/cover/sheydaie-700.jpg');
 }
 
-#music11::after {
-    background-image: url('../img/cover/20190104-cover-500.jpg');
+#video1::after {
+    background-image: url('../img/cover/navahi-20181231-02-500.jpg');
 }
 
-#music12::after {
-    background-image: url('../img/cover/20190104-cover-500.jpg');
-}
 
 .work .work-popup-close{
     float: left !important;
