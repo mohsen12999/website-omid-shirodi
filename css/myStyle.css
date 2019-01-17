@@ -107,8 +107,54 @@ div.promo-block.parallax-window ul li {
     background-image: url('../img/cover/20190104-cover-500.jpg');
 }
 
+.work .work-popup-close{
+    float: left !important;
+}
+.work-popup-content{
+    text-align: right !important;
+    direction: rtl;
+}
+.work .work-popup-content-divider {
+    border-right: 0 !important;
+    border-left: 1px solid #cdcecf !important;
+    float: right !important;
+}
+ul.list-inline.work-popup-tag{
+    padding-right: 0;
+}
+.news-title {
+    float: right !important;
+}
+.news-title h4,
+.news-title p{
+    text-align: right !important;
+}
+.news-title h4 a{
+    float: right !important;
+}
 
+.class-title{
+    float: right !important;
+    padding-left: 1em !important;
+}
+.class-title h3,
+.class-title p,
+.class-title ul li{
+    text-align: right !important;
+    direction: rtl !important;
+}
 
-/* .service .service-element{
-    text-align: center !important;
-} */
+.class-title h3 a,
+.class-title ul li i{
+    float: right !important;
+}
+.copyright{
+    direction: rtl;
+}
+.footer a.social-icons{
+    color: #17bed2;
+}
+.footer a.social-icons:hover{
+    background: #17bed2;
+    color: #fff;
+}
