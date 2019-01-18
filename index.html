@@ -196,13 +196,59 @@
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
-                        <div class="row row-space-2 margin-b-4 hidden">
-                            <audio controls>
-                                <source src="horse.ogg" type="audio/ogg">
-                                <source src="horse.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>
+                        <div id="musicSpan" class="row row-space-2 margin-b-4">
+                            <div style="margin: 1em;border: 1px solid gray;border-radius: 5px; padding: 1em;">
+                                <a href="#products" class="pull-left" onclick="closeMusicSpan()">X</a>
+                                <div class="row">
+                                    <div class="col-sm-6 pull-right" style="margin-bottom: 1em;">
+                                        <img class="img-responsive" src="img/cover/20190104-cover-500.jpg">
+                                    </div>
+                                    <div class="col-sm-6 text-right" style="padding: 1em;">
+                                        <h3>کلاسیک ایرانی</h3>
+                                        <p class="margin-b-5">امید شیرودی</p>
+                                        <div class="margin-t-10 sm-margin-t-0">
+                                            <p class="margin-b-5"><strong>نوازنده و تنظیم:</strong> امید شیرودی</p>
+                                            <p class="margin-b-5"><strong>طراح آکورد:</strong> امید شیرودی</p>
+                                            <p class="margin-b-5"><strong>عکس:</strong> امید شیرودی</p>
+                                            <p class="margin-b-5"><strong>تهیه کننده:</strong> امید شیرودی</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <audio controls style="width:100%">
+                                    <source src="mp3/Omid Shiroudi-Classic Irani.mp3" type="audio/mpeg">
+                                    اشکال در اجرای موسیقی
+                                </audio>
+                                <div class="row text-center">
+                                    <h5 style="padding:1em 1em 0 1em;">
+                                        <a id="downloadLink" href="mp3/Omid Shiroudi-Classic Irani.mp3" download>
+                                            دانلود فایل
+                                            <i class="color-base icon-cloud-download"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
                         </div>
+                        <div id="videoSpan" class="row row-space-2 margin-b-4" style="display: none;">
+                                <div style="margin: 1em;border: 1px solid gray;border-radius: 5px; padding: 1em;">
+                                    <a href="#products" class="pull-left" onclick="closeVideoSpan()">X</a>
+                                    <div class="row text-center">
+                                            <h3>گیتار نواحی</h3>
+                                            <p class="margin-b-5">امید شیرودی</p>
+                                    </div>
+                                    <div id="aparat" class="row">
+                                            <style>.h_iframe-aparat_embed_frame{position:relative;} .h_iframe-aparat_embed_frame .ratio {display:block;width:100%;height:auto;} .h_iframe-aparat_embed_frame iframe {position:absolute;top:0;left:0;width:100%; height:100%;}</style><div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 57%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/uDyz4/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
+                                    </div>
+                                    <div class="row text-center">
+                                            <div class="margin-t-10 sm-margin-t-0">
+                                                <p class="margin-b-5"><strong>نوازنده و تنظیم:</strong> امید شیرودی</p>
+                                                <p class="margin-b-5"><strong>طراح آکورد:</strong> امید شیرودی</p>
+                                                <p class="margin-b-5"><strong>عکس:</strong> امید شیرودی</p>
+                                                <p class="margin-b-5"><strong>تهیه کننده:</strong> امید شیرودی</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         <div class="row row-space-2 margin-b-4">
                             <div class="col-md-4 md-margin-b-4">
                                 <div class="service" data-height="height" id="music1">
@@ -213,7 +259,8 @@
                                         <h3>کلاسیک ایرانی</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/20190104-cover-500.jpg"
+                                        data-music="mp3/Omid Shiroudi-Classic Irani.mp3" data-name="کلاسیک ایرانی" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4 md-margin-b-4">
@@ -225,7 +272,8 @@
                                         <h3>آرزو</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/Arezoo-Omid Shiroudi-700.jpg"
+                                        data-music="mp3/Arezoo-Omid Shiroudi.mp3" data-name="آرزو" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -237,7 +285,8 @@
                                         <h3>دل دریایی</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/Dele Daryaie-Omid Shiroudi-700.jpg"
+                                        data-music="mp3/Dele Daryaie-Omid Shiroudi.mp3" data-name="دل دریایی" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +301,8 @@
                                         <h3>قدم می زنم</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/ghadam mizanam-700.jpg"
+                                        data-music="mp3/Ghadam Mizanam-Omid Shiroudi.mp3"  data-name="قدم می زنم" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4 md-margin-b-4">
@@ -264,7 +314,8 @@
                                         <h3>حس خوب</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/hesse khoob-omid shiroudi-500.jpg"
+                                        data-music="mp3/Hesse Khoob-Omid Shiroudi.mp3" data-name="حس خوب"  class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4 md-margin-b-4">
@@ -276,7 +327,8 @@
                                         <h3>بهار</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/IMG_6135-3m-600.jpg"
+                                        data-music="mp3/Bahar-Omid Shiroudi.mp3" data-name="بهار" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +343,8 @@
                                         <h3>جواب مثبت</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/Javab Mosbat-Omid Shiroudi-500.jpg"
+                                        data-music="mp3/Javab Mosbat-Omid Shiroudi.mp3" data-name="جواب مثبت" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4 md-margin-b-4">
@@ -303,7 +356,8 @@
                                         <h3>گیتار نواحی</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/navahi-20181231-02-500.jpg"
+                                        data-music="mp3/Omid Shiroudi-Navahi.mp3" data-name="گیتار نواحی" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -315,13 +369,31 @@
                                         <h3>رویای قشنگ</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playMusic(event,this)" data-image="royaye ghashang-700.jpg"
+                                        data-music="mp3/Royaye Ghashang-Omid Shiroudi.mp3" data-name="رویای قشنگ" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                         </div>
                         <!--// end row -->
                         <div class="row row-space-2 margin-b-4">
-                            <div class="col-md-4 md-margin-b-4 col-md-offset-2">
+                                <div class="col-md-4 md-margin-b-4 col-md-offset-4">
+                                    <div class="service" data-height="height" id="music10">
+                                        <div class="service-element">
+                                            <i class="service-icon icon-music-tone"></i>
+                                        </div>
+                                        <div class="service-info">
+                                            <h3>شیدایی</h3>
+                                            <p class="margin-b-5">امید شیرودی</p>
+                                        </div>
+                                        <a href="#products" onclick="playMusic(event,this)" data-image="img/cover/sheydaie-700.jpg'"
+                                            data-music="mp3/Sheydaie-Omid Shiroudi.mp3" data-name="شیدایی" class="content-wrapper-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// end row -->
+                        <div class="row row-space-2 margin-b-4">
+                            
+                            <div class="col-md-4 md-margin-b-4">
                                 <div class="service bg-color-base wow zoomIn" id="video1" data-height="height"
                                     data-wow-duration=".3" data-wow-delay=".1s">
                                     <div class="service-element">
@@ -331,22 +403,39 @@
                                         <h3>گیتار نواحی</h3>
                                         <p class="margin-b-5">امید شیرودی</p>
                                     </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 md-margin-b-4">
-                                <div class="service" data-height="height" id="music10">
-                                    <div class="service-element">
-                                        <i class="service-icon icon-music-tone"></i>
-                                    </div>
-                                    <div class="service-info">
-                                        <h3>شیدایی</h3>
-                                        <p class="margin-b-5">امید شیرودی</p>
-                                    </div>
-                                    <a href="#products" onclick="playMusic(this)" class="content-wrapper-link"></a>
+                                    <a href="#products" onclick="playVideo(event,this)" data-name="گیتار نواحی" 
+                                    data-aparat="https://www.aparat.com/video/video/embed/videohash/et14a/vt/frame" class="content-wrapper-link"></a>
                                 </div>
                             </div>
                             
+                            <div class="col-md-4 md-margin-b-4">
+                                <div class="service bg-color-base wow zoomIn" id="video1" data-height="height"
+                                    data-wow-duration=".3" data-wow-delay=".1s">
+                                    <div class="service-element">
+                                        <i class="service-icon color-white icon-control-play"></i>
+                                    </div>
+                                    <div class="service-info">
+                                        <h3>کلاسیک ایرانی</h3>
+                                        <p class="margin-b-5">امید شیرودی</p>
+                                    </div>
+                                    <a href="#products" onclick="playVideo(event,this)" data-name="کلاسیک ایرانی" 
+                                    data-aparat="https://www.aparat.com/video/video/embed/videohash/yKp5s/vt/frame" class="content-wrapper-link"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 md-margin-b-4">
+                                <div class="service bg-color-base wow zoomIn" id="video1" data-height="height"
+                                    data-wow-duration=".3" data-wow-delay=".1s">
+                                    <div class="service-element">
+                                        <i class="service-icon color-white icon-control-play"></i>
+                                    </div>
+                                    <div class="service-info">
+                                        <h3>حس خوب</h3>
+                                        <p class="margin-b-5">امید شیرودی</p>
+                                    </div>
+                                    <a href="#products" onclick="playVideo(event,this)" data-name="حس خوب" 
+                                    data-aparat="https://www.aparat.com/video/video/embed/videohash/uDyz4/vt/frame" class="content-wrapper-link"></a>
+                                </div>
+                            </div>
                         </div>
                         <!--// end row -->
                     </div>
@@ -371,7 +460,7 @@
                     <!-- Masonry Grid -->
                     <div class="masonry-grid row row-space-2">
                         <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                        
+
                         <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-3 margin-b-4">
                             <!-- Work -->
                             <div class="work work-popup-trigger">
@@ -389,7 +478,11 @@
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
                                                     <!-- <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد. سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با آزمون و تلاش بدان دست یافته است.</p> -->
-                                                    <p>در این کتاب نکات کمیاب و مهم درباره ی نواختن اصولی گیتار آموزش داده شده است و در پایان لازم است ذکر کنیم که این کتاب بسیار مناسب است برای افرادی که قصد شروع یادگیری مهارت نواختن گیتار را دارند و به آنها کمک میکند تا سریعتر از آنچه انتظار میرود این مهارت را به طور کامل فرا گیرند.</p>
+                                                    <p>در این کتاب نکات کمیاب و مهم درباره ی نواختن اصولی گیتار آموزش
+                                                        داده شده است و در پایان لازم است ذکر کنیم که این کتاب بسیار
+                                                        مناسب است برای افرادی که قصد شروع یادگیری مهارت نواختن گیتار را
+                                                        دارند و به آنها کمک میکند تا سریعتر از آنچه انتظار میرود این
+                                                        مهارت را به طور کامل فرا گیرند.</p>
                                                     <ul class="list-inline work-popup-tag">
                                                         <li class="work-popup-tag-item"><a class="work-popup-tag-link"
                                                                 href="#">نت موسیقی,</a></li>
@@ -430,7 +523,13 @@
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد. سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با آزمون و تلاش بدان دست یافته است.</p>
+                                                    <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار
+                                                        دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد.
+                                                        سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی
+                                                        به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای
+                                                        همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از
+                                                        دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با
+                                                        آزمون و تلاش بدان دست یافته است.</p>
                                                     <ul class="list-inline work-popup-tag">
                                                         <li class="work-popup-tag-item"><a class="work-popup-tag-link"
                                                                 href="#">نت موسیقی,</a></li>
@@ -472,7 +571,11 @@
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
                                                     <!-- <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد. سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با آزمون و تلاش بدان دست یافته است.</p> -->
-                                                    <p>در این کتاب نکات کمیاب و مهم درباره ی نواختن اصولی گیتار آموزش داده شده است و در پایان لازم است ذکر کنیم که این کتاب بسیار مناسب است برای افرادی که قصد شروع یادگیری مهارت نواختن گیتار را دارند و به آنها کمک میکند تا سریعتر از آنچه انتظار میرود این مهارت را به طور کامل فرا گیرند.</p>
+                                                    <p>در این کتاب نکات کمیاب و مهم درباره ی نواختن اصولی گیتار آموزش
+                                                        داده شده است و در پایان لازم است ذکر کنیم که این کتاب بسیار
+                                                        مناسب است برای افرادی که قصد شروع یادگیری مهارت نواختن گیتار را
+                                                        دارند و به آنها کمک میکند تا سریعتر از آنچه انتظار میرود این
+                                                        مهارت را به طور کامل فرا گیرند.</p>
                                                     <ul class="list-inline work-popup-tag">
                                                         <li class="work-popup-tag-item"><a class="work-popup-tag-link"
                                                                 href="#">نت موسیقی,</a></li>
@@ -513,7 +616,13 @@
                                         <div class="row">
                                             <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                 <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد. سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با آزمون و تلاش بدان دست یافته است.</p>
+                                                    <p>آدمی پیوسته روزگار دربند چنگال پرتوان طبیعت است و هرچه بار
+                                                        دشواری‌ها برگرده‌اش سنگینی کند بیشتر به آغوش طبیعت پناه می‌برد.
+                                                        سکوت، موسیقی، زیبایی و آرامش طبیعت آن چیزی است که پروردگار گیتی
+                                                        به او ارزانی داشته و در نهاد آدمی است. سرشت پویشگرآدمی نیز برای
+                                                        همراهی با جاودان نغمه‌های گیتی، ساز را آفرید. ساز نشان آگاهی از
+                                                        دانش‌های گوناگون پیشینیان و تاریخی ‌کهن است که آدمی سال‌ها با
+                                                        آزمون و تلاش بدان دست یافته است.</p>
                                                     <ul class="list-inline work-popup-tag">
                                                         <li class="work-popup-tag-item"><a class="work-popup-tag-link"
                                                                 href="#">نت موسیقی,</a></li>
@@ -586,10 +695,10 @@
                                 <p>خلاصه خبر در یک یا دو خط با توضیح مختصری درباره آن و ادامه در صفحه خبر</p>
                                 <a class="link" href="#">ادامه مطلب</a>
                             </div>
-                            
+
                         </div>
                         <!--// end row -->
-                        
+
                     </div>
                 </div>
                 <!--// end row -->
@@ -612,30 +721,34 @@
                     <div class="row row-space-2 margin-b-4">
 
                         <div class="class-title col-md-6 sm-margin-b-50  sm-margin-l-10">
-                            <h3><a href="#classes">موسسه نسیم رامسر</a><br ><span class="text-uppercase">موسسه فرهنگی هنری نسیم رامسر</span></h3>
+                            <h3><a href="#classes">موسسه نسیم رامسر</a><br><span class="text-uppercase">موسسه فرهنگی
+                                    هنری نسیم رامسر</span></h3>
                             <p>آموزش گیتار پاپ و فلامنکو - آموزش آواز پاپ - آموزش ریتم و آهنگسازی - گروه نوازی و ...</p>
                             <ul class="list-unstyled contact-list">
                                 <li><i class="margin-l-10 color-base icon-globe"></i> <a href="http://nasimramsar.com">NasimRamsar.com</a></li>
                                 <li><i class="margin-l-10 color-base icon-envelope"></i> info@nasimramsar.com</li>
-                                <li><i class="margin-l-10 color-base icon-pin"></i> رامسر - خیابان مطهری - جنب بانک صادرات مرکزی</li>
+                                <li><i class="margin-l-10 color-base icon-pin"></i> رامسر - خیابان مطهری - جنب بانک
+                                    صادرات مرکزی</li>
                                 <li><i class="margin-l-10 color-base icon-call-out"></i> 6633 25 55 011</li>
                             </ul>
                         </div>
 
                         <div class="class-title col-md-6 sm-margin-b-50 sm-margin-l-10">
-                            <h3><a href="#classes">موسسه نسیم رامسر</a><br ><span class="text-uppercase">موسسه فرهنگی هنری نسیم رامسر</span></h3>
+                            <h3><a href="#classes">موسسه نسیم رامسر</a><br><span class="text-uppercase">موسسه فرهنگی
+                                    هنری نسیم رامسر</span></h3>
                             <p>آموزش گیتار پاپ و فلامنکو - آموزش آواز پاپ - آموزش ریتم و آهنگسازی - گروه نوازی و ...</p>
                             <ul class="list-unstyled contact-list">
                                 <li><i class="margin-l-10 color-base icon-globe"></i> <a href="http://nasimramsar.com">NasimRamsar.com</a></li>
                                 <li><i class="margin-l-10 color-base icon-envelope"></i> info@nasimramsar.com</li>
-                                <li><i class="margin-l-10 color-base icon-pin"></i> رامسر - خیابان مطهری - جنب بانک صادرات مرکزی</li>
+                                <li><i class="margin-l-10 color-base icon-pin"></i> رامسر - خیابان مطهری - جنب بانک
+                                    صادرات مرکزی</li>
                                 <li><i class="margin-l-10 color-base icon-call-out"></i> 6633 25 55 011</li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <!--// end row -->
-                    
+
                 </div>
             </div>
             <!--// end row -->
@@ -687,7 +800,8 @@
         <div class="content container">
             <div class="row">
                 <div class="col-xs-6 text-right pull-right">
-                    <p class="copyright" class="margin-b-0">کلیه حقوق مادی و معنوی متعلق به <a class="fweight-700" href="">امید شیرودی</a> می باشد.</p>
+                    <p class="copyright" class="margin-b-0">کلیه حقوق مادی و معنوی متعلق به <a class="fweight-700" href="">امید
+                            شیرودی</a> می باشد.</p>
                 </div>
                 <div class="col-xs-6">
                     <ul class="list-inline">
@@ -697,7 +811,7 @@
                         <li><a href="#" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
                     </ul>
                 </div>
-                
+
             </div>
             <!--// end row -->
         </div>
@@ -731,11 +845,62 @@
 
     <!-- scripts -->
     <script>
-    function playMusic(e){
-        var ele = $(e);
-        console.log(e,ele);
-    }
+        function playMusic(event, ele) {
+            //hide last span
+            $('#musicSpan').slideUp('slow');
+            $('#videoSpan').slideUp('slow');
 
+            var $ele = $(ele);
+            //console.log(event,ele,$ele);
+            var $position = $($ele.attr('href')).offset().top;
+            $('html, body').stop().animate({
+                scrollTop: $position
+            }, 600);
+            event.preventDefault();
+
+            var image = $ele.data('image');
+            var music = $ele.data('music');
+            var name = $ele.data('name');
+            
+            
+            $('#musicSpan img').attr('src',image);
+            $('#musicSpan h3').text(name);
+            $('#musicSpan audio source').attr('src',music);
+            $('#musicSpan a#downloadLink').attr('href',music);
+
+            $('#musicSpan audio')[0].pause();
+            $('#musicSpan audio')[0].load();
+            
+            //show new span
+            $('#musicSpan').slideDown('slow');
+        }
+        function closeMusicSpan() {
+            $('#musicSpan').slideUp('slow');
+        }
+        function closeVideoSpan() {
+            $('#videoSpan').slideUp('slow');
+        }
+
+        function playVideo(event, ele){
+            //hide last span
+            $('#musicSpan').slideUp('slow');
+            $('#videoSpan').slideUp('slow');
+
+            var $ele = $(ele);
+            var $position = $($ele.attr('href')).offset().top;
+            $('html, body').stop().animate({
+                scrollTop: $position
+            }, 600);
+            event.preventDefault();
+
+            var name = $ele.data('name');
+            var aparat = $ele.data('aparat');
+
+            $('#videoSpan h3').text(name);
+            $('#videoSpan #aparat iframe').attr('src',aparat);
+
+            $('#videoSpan').slideDown('slow');
+        }
     </script>
 </body>
 <!-- END BODY -->
