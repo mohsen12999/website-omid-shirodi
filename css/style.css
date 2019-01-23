@@ -122,16 +122,27 @@ header a:hover {
 
 img.borderOnImg {
   /*position: relative;*/
+  /* border: 6px solid #ffffff80; */
+}
+
+div.image-span{
+  display: inline-block;
+  position: relative;
+}
+
+div.image-span div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border: 6px solid #ffffff80;
+  top: 0;
+  display: block;
 }
 
 header .imgDiv {
   padding-left: 0;
   text-align: left;
 }
-
-
-
 
 .searchbar {
   margin-bottom: auto;
