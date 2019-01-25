@@ -730,8 +730,14 @@ a.btn.more:hover {
   transition: all 3s ease 0s;
 }
 
+#news .row.news-row .desc p {
+  text-align: justify;
+  padding-left: 2em;
+}
+
 #news .row.news-row:hover .desc p {
   font-size: 1.1em;
+  padding-left: 0;
   transition: all 3s ease 0s;
 }
 
@@ -747,9 +753,12 @@ a.btn.more:hover {
 
 #sponsers {
   background-color: #ffffff33;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
 
 footer {
   background-color: #ffffff55;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
