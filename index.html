@@ -10,45 +10,50 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="main-menu nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-          <h4>سایت رسمی امید شیرودی</h4>
-          <p>پایگاه حفظ و معرفی آثار موسیقی و تالیفات</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <h4>موسیقی</h4>
-          <p>دانلود و پخش تک آهنگ ها</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <h4>کلاس های موسیقی</h4>
-          <p>آموزش گیتار - آموزش آواز پاپ</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <h4>بیوگرافی</h4>
-          <p>زندگی نامه امید شیرودی</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <h4>تماس</h4>
-          <p>ارتباط با ما</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="جستجو...">
-          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-        </div>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="main-menu navbar-nav nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <h4>سایت رسمی امید شیرودی</h4>
+            <p>پایگاه حفظ و معرفی آثار موسیقی و تالیفات</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <h4>موسیقی</h4>
+            <p>دانلود و پخش تک آهنگ ها</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <h4>کلاس های موسیقی</h4>
+            <p>آموزش گیتار - آموزش آواز پاپ</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <h4>بیوگرافی</h4>
+            <p>زندگی نامه امید شیرودی</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <h4>تماس</h4>
+            <p>ارتباط با ما</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="جستجو...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </nav>
   <header>
     <div class="container">
@@ -429,8 +434,8 @@
 
 
 
-
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
     setInterval(function () {
       var end_time = new Date(2019, 2, 1, 4);
@@ -440,7 +445,7 @@
       var mins = Math.floor(msec / 60000);
       var hrs = Math.floor(mins / 60);
       var days = Math.floor(hrs / 24);
-      var sec_st = sec % 60 > 0 ? sec : '0' + sec;
+
       document.getElementById('sec').innerHTML = fixNumber(sec % 60);
       document.getElementById('min').innerHTML = fixNumber(mins % 60);
       document.getElementById('hr').innerHTML = fixNumber(hrs % 24);
