@@ -5,6 +5,7 @@
 ## Front-end
 
 - [ ] collapse menu
+- [ ] play video in modal from aparat
 
 ### Back-end
 
