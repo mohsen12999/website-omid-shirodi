@@ -50,8 +50,12 @@
   font-weight: 700;
   font-stretch: bold;
 }
+@font-face {
+  font-family: 'Yekan';
+  src:url('../fonts/Yekan.ttf') format('truetype');
+  font-stretch: normal;
+}
 
-/*
 @font-face {
     font-family: 'agency fb';
     src: local('agency fb'),
@@ -59,7 +63,8 @@
         url('../fonts/agency-fb.ttf') format('truetype');
     font-weight: 400;
     font-stretch: normal;
-}*/
+}
+
 @font-face {
   font-family: 'Sahand';
   src: local('Sahand'),
@@ -69,7 +74,7 @@
 }
 
 body {
-  background-image: url('../img/web4-bg-1.jpg');
+  background-color: black;
   background-size: cover;
   text-align: right;
   color: white !important;
@@ -98,10 +103,48 @@ body {
   text-shadow: 0px 1px 0px black;
 }
 
-.main-menu.nav li a:hover p {
+.main-menu.nav li a p{
   padding-bottom: .5em;
-  border-bottom: 1px solid white;
 }
+
+.main-menu.nav li a:hover p {
+  border-bottom: 1px solid white;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .main-menu.nav li h4 {
   font-weight: bold;
@@ -246,6 +289,7 @@ section .title li:hover h1 {
 
 #music {
   margin-top: 9em;
+  margin-bottom: 8em;
 }
 
 section .row.first {
@@ -575,9 +619,9 @@ a.btn.more:hover {
   margin: 10px 36px;
 }
 
-/*#video {
-  margin-top:2em;
-}*/
+#video {
+  margin-bottom: 8em;
+}
 
 .video-title img {
   width: 100%;
@@ -596,6 +640,7 @@ a.btn.more:hover {
   border: 6px solid #ffffff40;
   display: block;
   overflow: hidden;
+  position: relative;
 }
 
 .video-title:hover {
@@ -638,7 +683,8 @@ a.btn.more:hover {
 
 #books {
   background-color: #a52a2a80;
-  padding-bottom: 2em;
+  padding-bottom: 6em;
+  /*margin-bottom: 8em;*/
 }
 
 .card.book {
@@ -657,6 +703,7 @@ a.btn.more:hover {
 .card.book .bookTitle {
   font-size: 30px;
   font-family: 'B Terrafic';
+  color: white;
 }
 
 .card.book figcaption {
@@ -685,6 +732,10 @@ a.btn.more:hover {
 .card.book a.btn:hover {
   background-color: #ff9900b3;
   border-color: #ff9900b3;
+}
+
+#news{
+  margin-bottom: 8em;
 }
 
 #news .row.news-row {
@@ -751,14 +802,201 @@ a.btn.more:hover {
   transition: all 3s ease 0s;
 }
 
-#sponsers {
-  background-color: #ffffff33;
-  padding-top: 2em;
-  padding-bottom: 2em;
+footer{
+  background-image: url('../img/bg-footer.jpg');
+  background-color: black;
 }
 
-footer {
-  background-color: #ffffff55;
-  padding-top: 2em;
-  padding-bottom: 2em;
+#sponsers {
+  background-color: #45454566;
+  padding-top: 1.35em;
+  padding-bottom: 1.35em;
+}
+
+#sponsers .nav-item{
+  opacity: 0.7;
+  transition: all 1s ease 0s;
+}
+#sponsers .nav-item:hover{
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+#sponsers .nav-item:hover img{
+  -webkit-filter: drop-shadow(0 0 5px black);
+  filter: drop-shadow(0 0 5px black);
+}
+
+footer #social-footer i{
+  margin: 36px 12px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #71717133;
+  font-size: 31px;
+  opacity: 0.7;
+  transition: all 1s ease 0s;
+}
+footer #social-footer i:hover{
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+#footer{
+  font-family: 'Yekan';
+  font-size: 13px;
+  margin-top: 6em;
+  /*margin-bottom: 6em;*/
+}
+#footer a{
+  color: #eeeeee;
+}
+#footer a:hover{
+color: white;
+text-decoration-color: #6c6c6c;
+}
+#copyright-footer p{
+  color:#898989;
+}
+
+#engligh-copyright{
+  direction: ltr;;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+/******************* Song Page ******************************************/
+
+.blur-box{
+  position: relative;
+}
+
+.blur-box .blur-content *{
+  z-index: 1;
+}
+.blur-background{
+  background-image: url('../img/song/hessekhoob-omidshiroudi-500.jpg');
+  filter: blur(30px);
+  -webkit-filter: blur(30px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#single-music h1{
+  font-family: 'Nazanin Outline';
+  font-size: 6em;
+margin-top:0;
+  text-shadow: 0 0 12px #ffffbe;
+}
+
+.between-line::before ,.between-line::after{
+  content: "";
+  position: absolute;
+  border-top: 1px solid #ffffffb3;
+  top: 0.9em;
+  width: 600px;
+  vertical-align: middle;
+}
+
+.between-line:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.between-line:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.no-margin{
+  margin: 0 !important;
+}
+.between-line{
+  display: inline-block;
+  position: relative;
+}
+#single-music .image-info img{
+  border:6px solid #ffffff40;
+  box-shadow: 0 5px 2px #000000b3;
+}
+
+.image-info{
+  margin-top: 6em;
+}
+
+.image-info .info{
+  font-family: 'B Terrafic';
+  font-size: 26px;
+  line-height: 16px;
+  text-shadow: 0 1px black;
+}
+
+.image-info .info table{
+  height: 100%;
+}
+
+.new-project-player i{
+  cursor: pointer;
+  font-size: 7em;
+  opacity: 0.8;
+}
+
+.latest-podcast-section{
+  margin-top: 3em;
+}
+.music-icon{
+  font-family: 'agency fb';
+  text-align: center;
+}
+.music-icon table{
+  margin: auto;
+}
+.music-icon td{
+  padding: 1.15em;
+  font-size: 19px;
+}
+.music-icon i{
+  display: block;
+  font-size: 2.8em;
+  padding-bottom: 10px;
+}
+.download-btn{
+  text-align: center;
+}
+.download-btn a{
+  font-family: 'B Terrafic';
+  background-color: #ff240091;
+  border-color: #ff240091;
+  box-shadow: 0 2px 2px #00000066;
+  padding: 14px 31px;
+  border-radius: .1rem;
+  text-shadow: 0 1px black;
+}
+.download-btn a:hover{
+  background-color: ##ff2400a5;
+  border-color: ##ff2400a5;
+}
+
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+.item{
+  padding:10px;
+}
+.item img{
+  width: 100%;
+  border: 3px solid #ffffff40;
+}
+#song-slider{
+  margin: 6em;
 }
