@@ -8,9 +8,11 @@
   <link href="css/all.css" rel="stylesheet">
   <title>سایت رسمی امید شیرودی</title>
 </head>
+
 <body style="background-image: url('img/web4-bg-1.jpg');">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
@@ -54,19 +56,24 @@
       </ul>
     </div>
   </nav>
+
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>”کلاسیک ایرانی“</h1>
-          <p>تک آهنگ “کلاسیک ایرانی” با گیتار و تنظیم موسیقی امید شیرودی منتشر شد.
-            علاقه مندان به موسیقی بی کلام و اجرای ساز گیتار می توانند این آهنگ را هم
-            اکنون از سایت رسمی امید شیرودی دانلود نمایند.</p>
-          <div style="direction:ltr" class="btn-group btn-group-lg" role="group">
+        <div class="col-md-6 vertical-middle">
+          <div>
+            <h1>”کلاسیک ایرانی“</h1>
+            <p>تک آهنگ “کلاسیک ایرانی” با گیتار و تنظیم موسیقی امید شیرودی منتشر شد.
+              علاقه مندان به موسیقی بی کلام و اجرای ساز گیتار می توانند این آهنگ را هم
+              اکنون از سایت رسمی امید شیرودی دانلود نمایند.</p>
+            <!-- <div style="direction:ltr" class="btn-group btn-group-lg" role="group">
             <a href="" class="btn btn-danger traffic">شناسنامه آهنگ کلاسیک ایرانی</a>
             <a href="" class="btn btn-success traffic">دانلود و پخش آهنگ</a>
+          </div> -->
+
           </div>
         </div>
+
         <div class="imgDiv col-md-6">
 
           <!--
@@ -105,11 +112,53 @@
 
         </div>
       </div>
+
+      <div class="row justify-content-center" style="direction: ltr">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-lg-2 albam-preview">
+              <table style="height:100%">
+                <tr>
+                  <td><i class="fas fa-play" style="cursor: pointer; font-size: 7em; opacity: 0.8; text-shadow: 0 0 24px lightgray;"
+                      onclick="wavesurfer.playPause();"></i></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-lg-10">
+              <div class="track-name">Hesse khob - Omid Shiroudi</div>
+              <div class="audio-wave">
+                <div id="audiowave"></div>
+              </div>
+              <div id="cliptime"></div>
+              <!--<button id="play" class="site-btn" onclick="wavesurfer.playPause();">LISTEN LIVE</button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="music-icon">
+          <table>
+            <tr>
+              <td><i class="far fa-heart"></i></td>
+            </tr>
+          </table>
+        </div>
+        <div class="download-btn">
+          <div class="container">
+            <a href="#" class="btn btn-lg btn-primary" download>دانلود آهنگ حس خوب امید شیرودی با کیفیت 320KB</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align: center;background-color: #ff360080;">
+      <h1 style="font-family: 'Entezar3' !important;">موسیقی</h1>
     </div>
   </header>
   <section id="music">
     <div class="container">
-      <div class="title text-center">
+      <!-- <div class="title text-center">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="#">
@@ -117,9 +166,9 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div class="row first">
-        <div class="col-md-4">
+        <div class="col">
           <div class="box14">
             <img class="img-fluid borderOnImg" src="img\navahi-20181231-02-500.jpg" alt="">
             <div class="box-content text-center">
@@ -140,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col">
           <div class="box14">
             <img class="img-fluid borderOnImg" src="img\Javab Mosbat-Omid Shiroudi-500.jpg" alt="">
             <div class="box-content text-center">
@@ -161,7 +210,49 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col">
+          <div class="box14">
+            <img class="img-fluid borderOnImg" src="img\hesse khoob-omid shiroudi-500.jpg" alt="">
+            <div class="box-content text-center">
+              <h3 class="title nazanin">
+                <span class="post nazanin">حس خوب</span>
+              </h3>
+              <span class="post nazanin">امید شیرودی</span>
+              <br>
+              <div class="middle">
+                <span class="post nazanin"><i class="far fa-heart"></i>2k</span>
+                <span class="post nazanin"><i class="fas fa-headphones-alt" style="font-size: 24px"></i>845</span>
+              </div>
+
+              <ul class="icon">
+                <li><a href="#" title="شنیدن آهنگ"><i class="fa fa-play"></i></a></li>
+                <li><a href="#" title="رفتن به صفحه آهنگ"><i class="fa fa-link"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box14">
+            <img class="img-fluid borderOnImg" src="img\hesse khoob-omid shiroudi-500.jpg" alt="">
+            <div class="box-content text-center">
+              <h3 class="title nazanin">
+                <span class="post nazanin">حس خوب</span>
+              </h3>
+              <span class="post nazanin">امید شیرودی</span>
+              <br>
+              <div class="middle">
+                <span class="post nazanin"><i class="far fa-heart"></i>2k</span>
+                <span class="post nazanin"><i class="fas fa-headphones-alt" style="font-size: 24px"></i>845</span>
+              </div>
+
+              <ul class="icon">
+                <li><a href="#" title="شنیدن آهنگ"><i class="fa fa-play"></i></a></li>
+                <li><a href="#" title="رفتن به صفحه آهنگ"><i class="fa fa-link"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
           <div class="box14">
             <img class="img-fluid borderOnImg" src="img\hesse khoob-omid shiroudi-500.jpg" alt="">
             <div class="box-content text-center">
@@ -193,9 +284,13 @@
     </div>
   </section>
 
+
+
   <section id="counter">
+    <div style="text-align: center;background-color: #ff360080;">
+      <h1 style="font-family: 'Entezar3' !important;">در دست انتشار</h1>
+    </div>
     <div>
-      <h1 class="text-center title">بزودی ...</h1>
       <div class="time">
         <ul class="nav justify-content-center">
           <li class="nav-item">
@@ -222,7 +317,161 @@
     </div>
   </section>
 
-  <section id="video">
+  <section id="news">
+    <div style="text-align: center;background-color: #ff360080;">
+      <h1 style="font-family: 'Entezar3' !important;">اخبار</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div style="background-color: #ffffff33;padding: 5px;clear: both;border-radius: 3px;">
+            <div>
+              <img class="img-responsive" style="width:100%" src="img/Omid Shiroudi-Classic Irani-500.jpg" alt="">
+            </div>
+            <div>
+              <h4>کلاسیک ایرانی</h4>
+              <p>تک آهنگ یظیزر طذذ زرذزرذ رزذرزذ</p>
+              <span class="">1397/01/01</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="background-color: #2a2a2a">
+    <div style="text-align: center;background-color: #ff360080;">
+      <h1 style="font-family: 'Entezar3' !important;">فروشگاه</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+          <img class="img-responsive" style="width:100%" src="img/javabmosbat-cover.jpg" alt="">
+          <p>آلبوم اورجینال جواب مثبت</p>
+          <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+        </div>
+      </div>
+      <div class="row" style="padding-bottom:4em;padding-top:2em; ">
+        <div class="col text-center">
+          <div style="background-color: #131313; padding: 5px;border-radius: 3px;">
+            <img class="img-responsive" style="width:100%" src="img/book/GuitarChord-500.jpg" alt="">
+            <p>آکورد های گیتار</p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div style="background-color: #131313; padding: 5px;border-radius: 3px;">
+            <img class="img-responsive" style="width:100%" src="img/book/GuitarEducation-500.jpg" alt="">
+            <p>آکورد های گیتار</p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div style="background-color: #131313; padding: 5px;border-radius: 3px;">
+            <img class="img-responsive" style="width:100%" src="img/book/GuitarRhythm-500.jpg" alt="">
+            <p>آکورد های گیتار</p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div style="background-color: #131313; padding: 5px;border-radius: 3px;">
+            <img class="img-responsive" style="width:100%" src="img/book/GuitarScale-500.jpg" alt="">
+            <p>آکورد های گیتار</p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div style="background-color: #131313; padding: 5px;border-radius: 3px;">
+            <img class="img-responsive" style="width:100%" src="img/book/MusicTheory-500.jpg" alt="">
+            <p>آکورد های گیتار</p>
+            <a href="#" class="btn btn-primary"><i class="fa fa-cart-plus"></i> پیش فروش</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="video">
     <div class="container">
       <div class="title text-center">
         <ul class="nav justify-content-center">
@@ -269,14 +518,10 @@
         </div>
 
       </div>
-      <!--
-      <div class="row">
-        <a href="#" class="btn btn-primary more">بیشتر</a>
-      </div>-->
     </div>
-  </section>
+  </section> -->
 
-  <section id="books">
+  <!-- <section id="books">
     <div class="container">
       <div class="title text-center">
         <ul class="nav justify-content-center">
@@ -292,10 +537,10 @@
           <div class="card book">
             <a href="">
               <figure>
-              <img src="img\book\GuitarEducation-500.jpg" class="card-img-top" alt="...">
-              <figcaption><span class="bookTitle">رساله گیتار نوازی</span></figcaption>
-            </figure>
-          </a>
+                <img src="img\book\GuitarEducation-500.jpg" class="card-img-top" alt="...">
+                <figcaption><span class="bookTitle">رساله گیتار نوازی</span></figcaption>
+              </figure>
+            </a>
             <div class="card-body text-center">
               <a href="#" class="btn btn-lg btn-primary"><i class="fas fa-shopping-cart"></i> پیش فروش</a>
             </div>
@@ -306,10 +551,10 @@
           <div class="card book">
             <a href="">
               <figure>
-              <img src="img\book\GuitarChord-500.jpg" class="card-img-top" alt="...">
-              <figcaption><span class="bookTitle">آکوردهای  گیتار</span></figcaption>
-            </figure>
-          </a>
+                <img src="img\book\GuitarChord-500.jpg" class="card-img-top" alt="...">
+                <figcaption><span class="bookTitle">آکوردهای گیتار</span></figcaption>
+              </figure>
+            </a>
             <div class="card-body text-center">
               <a href="#" class="btn btn-lg btn-primary"><i class="fas fa-shopping-cart"></i> پیش فروش</a>
             </div>
@@ -320,10 +565,10 @@
           <div class="card book">
             <a href="">
               <figure>
-              <img src="img\book\GuitarRhythm-500.jpg" class="card-img-top" alt="...">
-              <figcaption><span class="bookTitle">ریتم گیتار</span></figcaption>
-            </figure>
-          </a>
+                <img src="img\book\GuitarRhythm-500.jpg" class="card-img-top" alt="...">
+                <figcaption><span class="bookTitle">ریتم گیتار</span></figcaption>
+              </figure>
+            </a>
             <div class="card-body text-center">
               <a href="#" class="btn btn-lg btn-primary"><i class="fas fa-shopping-cart"></i> پیش فروش</a>
             </div>
@@ -334,10 +579,10 @@
           <div class="card book">
             <a href="">
               <figure>
-              <img src="img\book\GuitarScale-500.jpg" class="card-img-top" alt="...">
-              <figcaption><span class="bookTitle">گام نوازی گیتار</span></figcaption>
-            </figure>
-          </a>
+                <img src="img\book\GuitarScale-500.jpg" class="card-img-top" alt="...">
+                <figcaption><span class="bookTitle">گام نوازی گیتار</span></figcaption>
+              </figure>
+            </a>
             <div class="card-body text-center">
               <a href="#" class="btn btn-lg btn-primary"><i class="fas fa-shopping-cart"></i> پیش فروش</a>
             </div>
@@ -346,10 +591,9 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
-
-  <section id="news">
+  <!-- <section id="news">
     <div class="container">
       <div class="title text-center">
         <ul class="nav justify-content-center">
@@ -400,41 +644,37 @@
             در سایت رسمی امید شیرودی دانلود نمایند.</p>
         </div>
       </div>
-<!--
-      <div class="row">
-        <a href="#" class="btn btn-primary more">بیشتر</a>
-      </div>-->
 
     </div>
-  </section>
+  </section> -->
 
-<footer>
-  <section id="sponsers">
-    <nav>
-      <ul class="main-menu nav justify-content-center">
-        <!-- <li class="nav-item">
+  <footer>
+    <section id="sponsers">
+      <nav>
+        <ul class="main-menu nav justify-content-center">
+          <!-- <li class="nav-item">
           <img src="img\brand-icons\brand.png" alt="">
         </li> -->
-        <li class="nav-item">
-          <a href="#"><img src="img/brand-icons/alborz.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><img src="img/brand-icons/hamahang.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><img src="img/brand-icons/nasim.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><img src="img/brand-icons/razeghi.png" alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><img src="img/brand-icons/taknama.png" alt=""></a>
-        </li>
-      </ul>
-    </nav>
-  </section>
+          <li class="nav-item">
+            <a href="#"><img src="img/brand-icons/alborz.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="img/brand-icons/hamahang.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="img/brand-icons/nasim.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="img/brand-icons/razeghi.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="img/brand-icons/taknama.png" alt=""></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-  <section id="footer">
+    <section id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -461,7 +701,7 @@
           <div class="col-md-3">
             <p>تماس</p>
             <p>تنکابن: بلوار شهید شیرودی، نبش خیابان ستوده، آموزشگاه گلپور <br>تلفن: +1154281531</p>
-            <p>رامسر: خیابان استاد مطهری، نارنجبن، جنب  بانک صادرات مرکزی، آموزشگاه نسیم<br>تلفن: +1155256633</p>
+            <p>رامسر: خیابان استاد مطهری، نارنجبن، جنب بانک صادرات مرکزی، آموزشگاه نسیم<br>تلفن: +1155256633</p>
             <p></p>
           </div>
 
@@ -475,8 +715,9 @@
             <p>پایگاه رسمی اطلاع رسانی نشر و معرفی آثار موسیقی امید شیرودی در بستر وب با دامنه نقطه آی آر.</p>
           </div>
           <div class="row justify-content-center">
-            <p style="text-align: center;">تمامی حقوق مادی و معنوی برای <a href="#">وبسایت رسمی امید شیرودی</a> محفوظ است. طراحی سایت <a href="#">شرکت تحلیلگران البرز</a>.
-    نسخه 0.1.1</p>
+            <p style="text-align: center;">تمامی حقوق مادی و معنوی برای <a href="#">وبسایت رسمی امید شیرودی</a> محفوظ
+              است. طراحی سایت <a href="#">شرکت تحلیلگران البرز</a>.
+              نسخه 0.1.1</p>
           </div>
           <div id="engligh-copyright" class="row justify-content-center">
             <p>&copy; 2019 <a href="#">www.omidshiroudi.ir</a></p>
@@ -490,34 +731,38 @@
 
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-      setInterval(function () {
-        var end_time = new Date(2019, 2, 1, 4);
-        var time = new Date();
-        var msec = end_time - time;
-        var sec = Math.floor(msec / 1000);
-        var mins = Math.floor(msec / 60000);
-        var hrs = Math.floor(mins / 60);
-        var days = Math.floor(hrs / 24);
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-        document.getElementById('sec').innerHTML = fixNumber(sec % 60);
-        document.getElementById('min').innerHTML = fixNumber(mins % 60);
-        document.getElementById('hr').innerHTML = fixNumber(hrs % 24);
-        document.getElementById('day').innerHTML = days;
-      }, 1000);
+  <script src="js/wavesurfer.min.js"></script>
+  <script src="js/audio.js"></script>
 
-      function fixNumber(value) {
-        if (value == 0) {
-          return '00';
-        }
-        if (value < 10) {
-          return '0' + value;
-        }
-        return value;
+  <script type="text/javascript">
+    setInterval(function () {
+      var end_time = new Date(2019, 2, 1, 4);
+      var time = new Date();
+      var msec = end_time - time;
+      var sec = Math.floor(msec / 1000);
+      var mins = Math.floor(msec / 60000);
+      var hrs = Math.floor(mins / 60);
+      var days = Math.floor(hrs / 24);
+
+      document.getElementById('sec').innerHTML = fixNumber(sec % 60);
+      document.getElementById('min').innerHTML = fixNumber(mins % 60);
+      document.getElementById('hr').innerHTML = fixNumber(hrs % 24);
+      document.getElementById('day').innerHTML = days;
+    }, 1000);
+
+    function fixNumber(value) {
+      if (value == 0) {
+        return '00';
       }
-    </script>
-  </body>
+      if (value < 10) {
+        return '0' + value;
+      }
+      return value;
+    }
+  </script>
+</body>
 
 </html>
