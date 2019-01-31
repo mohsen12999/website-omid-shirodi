@@ -93,7 +93,8 @@ body {
   margin: 1em;
   padding: 0;
 }
-
+.agency{font-family: 'agency fb' !important;}
+.nazanin {font-family: 'B Nazanin';}
 .main-menu.nav li {
   margin: 1.5em;
   font-family: 'B Nazanin';
@@ -189,10 +190,10 @@ body {
 }
 
 header h1 {
-  font-family: 'Nazanin Outline';
-  font-size: 4.1em;
+  /*font-family: 'Nazanin Outline';*/
+  /*font-size: 3.1em;*/
   margin: 1.15em auto;
-  text-shadow: 0 0 12px #ffffbe;
+  /*text-shadow: 0 0 12px #ffffbe;*/
 }
 
 header p,
@@ -327,7 +328,7 @@ section .title li:hover h1 {
 
 #music {
   margin-top: 9em;
-  margin-bottom: 8em;
+  padding-bottom: 8em;
 }
 
 section .row.first {
@@ -625,7 +626,6 @@ a.btn.more:hover {
 
 #counter {
   font-family: 'Sahand';
-  margin-top: 4em;
   background-image: url('../img/counter-1.jpg');
 }
 
@@ -772,10 +772,10 @@ a.btn.more:hover {
   background-color: #ff9900b3;
   border-color: #ff9900b3;
 }
-
+/*
 #news {
   margin-bottom: 8em;
-}
+}*/
 
 #news .row.news-row {
   margin: 2em 0;
@@ -913,21 +913,26 @@ footer #social-footer i:hover {
 
 .blur-box {
   position: relative;
+  overflow: hidden;
 }
 
 .blur-box .blur-content * {
   z-index: 1;
 }
-
+.box-content{
+  z-index: 2 !important;
+}
 .blur-background {
   background-image: url('../img/song/hessekhoob-omidshiroudi-500.jpg');
+  position: absolute;
   filter: blur(30px);
   -webkit-filter: blur(30px);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+
   background-position: center;
   background-size: cover;
   opacity: 0.7;
@@ -1016,15 +1021,35 @@ footer #social-footer i:hover {
 
 .music-icon i {
   display: block;
-  font-size: 2.8em;
-  padding-bottom: 10px;
+  font-size: 1.5em;
+  /*padding-bottom: 10px;*/
 }
 
+.music-icon.index-like:hover{
+  background-color: lightgoldenrodyellow !important;
+}
+
+.music-icon.index-like:hover i {
+  color: red;
+}
+.music-icon.index-like .fas{
+  display: none;
+}
+.music-icon.index-like .far{
+  display: block;
+}
+.music-icon.index-like:hover .fas {
+  display: block;
+}
+  .music-icon.index-like:hover .far {
+    display: none;
+  }
+/*
 .download-btn {
   text-align: center;
-}
+}*/
 
-.download-btn a {
+.download-btn {
   font-family: 'B Terrafic';
   background-color: #ff240091;
   border-color: #ff240091;
@@ -1032,9 +1057,10 @@ footer #social-footer i:hover {
   padding: 14px 31px;
   border-radius: .1rem;
   text-shadow: 0 1px black;
+  font-size: 26px !important;
 }
 
-.download-btn a:hover {
+.download-btn:hover {
   background-color: #ff2400a5;
   border-color: #ff2400a5;
 }
@@ -1070,7 +1096,14 @@ footer #social-footer i:hover {
 .MultiCarousel .rightLst {
   position: absolute;
   border-radius: 50%;
-  top: calc(50% - 20px);
+  /*top: calc(50% - 20px);*/
+
+  top: calc(50% - 61px);
+  font-size: 70px;
+  text-shadow: 2px 2px 7px black;
+  background-color: inherit;
+  border-width: 0;
+  border-color: inherit;
 }
 
 .MultiCarousel .leftLst {
@@ -1084,7 +1117,8 @@ footer #social-footer i:hover {
 .MultiCarousel .leftLst.over,
 .MultiCarousel .rightLst.over {
   pointer-events: none;
-  background: #ccc;
+  /*background: #ccc;*/
+  cursor: not-allowed;;
 }
 
 /************************ MultiCarousel **************************************************/
@@ -1105,4 +1139,179 @@ footer #social-footer i:hover {
 .vertical-middle{
   display: flex;
   align-items: center;
+}
+/************************ MultiCarousel **************************************************/
+.title-div{
+  text-align: center;
+  background-color: #ff360080;
+}
+.title-div h1{
+  font-family: 'Entezar3' !important;
+  margin-bottom: 0px;
+  text-shadow: 0 0 12px #ffffbe;
+  color: #ffffffb3;
+}
+.title-div a{
+  text-decoration: none;
+}
+.title-div:hover h1{
+  color: #ffffff;
+}
+#classes{
+  text-align: center;
+  position: relative;
+}
+#classes .on-img{
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+}
+#classes .on-img a{
+  position: relative;
+   left: -50%;
+}
+
+.index-player{
+  direction: ltr;
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+.news-line,.book-line,.cd-line{
+  padding:8em;
+}
+.news-line .news-div{
+background-color: #ffffff33;padding: 3px;clear: both;border-radius: 3px;
+position: relative;
+}
+.news-content{
+  margin: 1em;
+}
+.news-content h4{
+  font-family: 'B Nazanin';
+  font-weight: bold;
+}
+.news-content p{
+  font-family: 'Yekan';
+  font-size: 13px;
+  text-align: justify;
+  line-height: 16px;
+}
+.news-content span{
+  display: block;
+  text-align: left;
+  font-family: 'Yekan';
+  font-size: 12px;
+}
+
+.news-div::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .35s ease 0s;
+    z-index: 2;
+    transition: all 1s ease 0s;
+}
+
+.news-div:hover::before {
+    opacity: 1;
+    transition: all 1s ease 0s;
+}
+.news-line a{
+  color:white;
+  text-decoration: none;
+}
+.book-line .col{
+  padding-right: 0;
+}
+.book-line, .cd-line{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.cd-line p{
+  font-family: 'B Nazanin';
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 1em;
+}
+.cd-line img{
+  box-shadow: 0 5px 2px #000000b3;
+}
+
+.cd-line a i{
+  font-size: 25px;
+}
+.site-btn{
+  font-family: 'B Terrafic';
+  background-color: #ff240091;
+  border-color: #ff240091;
+  box-shadow: 0 2px 2px #00000066;
+  padding: 14px 31px;
+  border-radius: .1rem;
+  text-shadow: 0 1px black;
+  padding: 8px 20px;
+  font-size: 20px;
+}
+.site-btn:hover {
+  background-color: #ff2400a5;
+  border-color: #ff2400a5;
+}
+.site-btn.buy-btn{
+  position: relative;
+  padding-right: 50px;
+}
+.site-btn.buy-btn i{
+  position: absolute;
+right: 15px;
+top: 25%;
+}
+
+.book-div{
+  background-color: #131313;
+  padding: 5px 5px 0 5px;
+  border-radius: 3px;
+}
+.book-div .site-btn.buy-btn{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#store{
+  padding-bottom: 5em;
+}
+.news-content.text-center p,
+.news-content.text-center span{
+  text-align: center;
+}
+.news-line-title{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'B Nazanin';
+  text-align: center;
+}
+.news-line-title h4{
+  padding-bottom: .85em;
+}
+.news-content.text-center h4{
+  font-size: 18px;
+}
+.myplayer img{
+  width:100%;border: 6px solid #ffffff40;box-shadow: 0 5px 2px #000000b3;
+}
+.myplayer .player-btn{
+  position:absolute;left:50%;
+}
+.myplayer .player-btn i{
+  position: relative;left: -50%;font-size: 4em;
+}
+.myplayer .player-btn i.fa-pause{
+  display:none;
+  transition: all 1s ease 0s;
+}
+.myplayer:hover .player-btn i.fa-pause{
+  display:block;
+  transition: all 1s ease 0s;
 }

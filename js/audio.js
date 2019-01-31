@@ -1,7 +1,7 @@
 	var wavesurfer = WaveSurfer.create({
 		container: '#audiowave',
 		waveColor: '#fff',
-		progressColor: '#000',
+		progressColor: '#008000',
 		barWidth: 1,
 		barGap: 1,
 		cursorColor: '#fe5800',
@@ -47,3 +47,13 @@
 	$(document).ready(function($){
 		$('#cliptime').appendTo('wave wave');
 	});
+
+	wavesurfer.on('pause', function () {
+		$('.wavesurfer-icon').addClass('fa-play');
+		$('.wavesurfer-icon').removeClass('fa-pause');
+	});
+
+		wavesurfer.on('play', function () {
+			$('.wavesurfer-icon').addClass('fa-pause')
+			$('.wavesurfer-icon').removeClass('fa-play')
+		});
