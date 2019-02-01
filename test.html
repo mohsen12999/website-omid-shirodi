@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <h1>Masonry - imagesLoaded progress</h1>
+<div class="container">
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb1.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb2.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb3.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb4.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb5.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb6.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb7.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb8.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/gallery/thumb9.jpg" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<style media="screen">
+  * { box-sizing: border-box; }
+
+  /* force scrollbar */
+  html { overflow-y: scroll; }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  /* ---- isotope ---- */
+
+  .grid {
+    background: #DDD;
+  }
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+
+  .grid-item {
+    float: left;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<script src="js/masonry.pkgd.min.js"></script>-->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript">
+      // external js: isotope.pkgd.js, imagesloaded.pkgd.js
+
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+    }
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });
+
+
+    </script>
+  </body>
+</html>

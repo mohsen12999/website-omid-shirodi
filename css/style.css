@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'B Nazanin';
-  src: local('B Nazanin'),
+  font-family: 'Nazanin';
+  src: local('Nazanin'),
     local('BNazanin'),
     url('../fonts/BNazanin.woff2') format('woff2'),
     url('../fonts/BNazanin.woff') format('woff'),
@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: 'B Nazanin';
-  src: local('B Nazanin Bold'),
+  font-family: 'Nazanin';
+  src: local('Nazanin Bold'),
     local('BNazanin-Bold'),
     url('../fonts/BNaznnBd.woff2') format('woff2'),
     url('../fonts/BNaznnBd.woff') format('woff'),
@@ -33,7 +33,7 @@
 }
 
 @font-face {
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   src: local('B Traffic'),
     local('B-Traffic'),
     url('../fonts/BTraffic.ttf') format('truetype');
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   src: local('B Traffic'),
     local('B-Traffic'),
     url('../fonts/BTraffic.ttf') format('truetype');
@@ -94,10 +94,10 @@ body {
   padding: 0;
 }
 .agency{font-family: 'agency fb' !important;}
-.nazanin {font-family: 'B Nazanin';}
+.nazanin {font-family: 'Nazanin';}
 .main-menu.nav li {
   margin: 1.5em;
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
 }
 
 .main-menu.nav li a {
@@ -198,12 +198,12 @@ header h1 {
 
 header p,
 .traffic {
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   font-size: 22px;
 }
 
 .nazanin {
-  font-family: 'B Nazanin'
+  font-family: 'Nazanin'
 }
 
 header p {
@@ -257,7 +257,7 @@ header .imgDiv {
   width: 200px;
   caret-color: red;
   transition: width 0.4s linear;
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
   font-size: 25px;
 }
 
@@ -286,7 +286,7 @@ header .imgDiv {
 }
 
 .headerStyle {
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
   text-shadow: 0px 1px 0px black;
   color: white;
   font-size: 50px;
@@ -613,7 +613,7 @@ figure.effect-sadie img {
 a.btn.more {
   margin: 2em auto;
   font-size: 40px;
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   color: #fffc;
   background-color: #007bff;
   border-color: #fff6;
@@ -741,7 +741,7 @@ a.btn.more:hover {
 
 .card.book .bookTitle {
   font-size: 30px;
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   color: white;
 }
 
@@ -985,7 +985,7 @@ footer #social-footer i:hover {
 }
 
 .image-info .info {
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   font-size: 26px;
   line-height: 16px;
   text-shadow: 0 1px black;
@@ -1002,7 +1002,7 @@ footer #social-footer i:hover {
 }
 
 .latest-podcast-section {
-  margin-top: 3em;
+  margin-top: 6em;
 }
 
 .music-icon {
@@ -1050,7 +1050,7 @@ footer #social-footer i:hover {
 }*/
 
 .download-btn {
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   background-color: #ff240091;
   border-color: #ff240091;
   box-shadow: 0 2px 2px #00000066;
@@ -1187,7 +1187,7 @@ position: relative;
   margin: 1em;
 }
 .news-content h4{
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
   font-weight: bold;
 }
 .news-content p{
@@ -1233,7 +1233,7 @@ position: relative;
   padding-bottom: 5em;
 }
 .cd-line p{
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
   font-size: 20px;
   font-weight: bold;
   padding-top: 1em;
@@ -1246,7 +1246,7 @@ position: relative;
   font-size: 25px;
 }
 .site-btn{
-  font-family: 'B Terrafic';
+  font-family: 'Terrafic';
   background-color: #ff240091;
   border-color: #ff240091;
   box-shadow: 0 2px 2px #00000066;
@@ -1289,7 +1289,7 @@ top: 25%;
 .news-line-title{
   font-size: 18px;
   font-weight: bold;
-  font-family: 'B Nazanin';
+  font-family: 'Nazanin';
   text-align: center;
 }
 .news-line-title h4{
@@ -1314,4 +1314,80 @@ top: 25%;
 .myplayer:hover .player-btn i.fa-pause{
   display:block;
   transition: all 1s ease 0s;
+}
+
+#song-list{
+  margin-top: 5em;
+  margin-bottom : 5em;
+}
+
+#song-list .on-song{
+  margin: 7px;
+  background-color: #ffffff12;
+  border: 1px solid #0003;
+  text-shadow: 0 1px #0006;
+  padding: 1px;
+  color: white;
+  font-family: 'Nazanin';
+  transition: all 1s ease 0s;
+}
+#song-list a:nth-child(even) .on-song{
+  background-color: #ffffff33;
+  border: 1px solid #0004;
+  transition: all 1s ease 0s;
+}
+#song-list a.active .on-song{
+  background-color: #0008;
+}
+#song-list a:hover .on-song{
+  background-color: #ffffff53;
+  transition: all 1s ease 0s;
+}
+#song-list .on-song h4.song-name{
+  color:#fe6114;
+  font-weight: bold;
+  padding-right: 10px;
+}
+#song-list .on-song h4.song-name span{
+   font-size: 1rem;
+   padding-right: 10px;
+   font-weight: normal;
+}
+#song-list .on-song .description{
+  line-height: 0;
+  padding-right: 11px;
+}
+#song-list a{
+  text-decoration: none;
+}
+.ltr-direction{
+  direction: ltr;
+}
+#song-list .english-title,
+#song-list .song-rate{
+  opacity: 0.7;
+}
+#song-list .on-song h4{
+  margin-bottom: 0;
+}
+#song-list .pic-div{
+  padding: 5px;
+  text-align: left;
+}
+#song-list .pic-div img{
+  width:75%;
+}
+.music-btn i{
+    padding-left: 5px;
+}
+.music-btn .music-icon{
+  padding: 14px;
+}
+.music-btn .music-icon i{
+  padding: 0;
+}
+.music-name-top{
+  margin-right: 4em;
+font-family: 'Yekan';
+opacity: 0.7;
 }
