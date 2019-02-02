@@ -93,8 +93,15 @@ body {
   margin: 1em;
   padding: 0;
 }
-.agency{font-family: 'agency fb' !important;}
-.nazanin {font-family: 'Nazanin';}
+
+.agency {
+  font-family: 'agency fb' !important;
+}
+
+.nazanin {
+  font-family: 'Nazanin';
+}
+
 .main-menu.nav li {
   margin: 1.5em;
   font-family: 'Nazanin';
@@ -772,6 +779,7 @@ a.btn.more:hover {
   background-color: #ff9900b3;
   border-color: #ff9900b3;
 }
+
 /*
 #news {
   margin-bottom: 8em;
@@ -919,9 +927,11 @@ footer #social-footer i:hover {
 .blur-box .blur-content * {
   z-index: 1;
 }
-.box-content{
+
+.box-content {
   z-index: 2 !important;
 }
+
 .blur-background {
   background-image: url('../img/song/hessekhoob-omidshiroudi-500.jpg');
   position: absolute;
@@ -1025,25 +1035,30 @@ footer #social-footer i:hover {
   /*padding-bottom: 10px;*/
 }
 
-.music-icon.index-like:hover{
+.music-icon.index-like:hover {
   background-color: lightgoldenrodyellow !important;
 }
 
 .music-icon.index-like:hover i {
   color: red;
 }
-.music-icon.index-like .fas{
+
+.music-icon.index-like .fas {
   display: none;
 }
-.music-icon.index-like .far{
+
+.music-icon.index-like .far {
   display: block;
 }
+
 .music-icon.index-like:hover .fas {
   display: block;
 }
-  .music-icon.index-like:hover .far {
-    display: none;
-  }
+
+.music-icon.index-like:hover .far {
+  display: none;
+}
+
 /*
 .download-btn {
   text-align: center;
@@ -1118,7 +1133,8 @@ footer #social-footer i:hover {
 .MultiCarousel .rightLst.over {
   pointer-events: none;
   /*background: #ccc;*/
-  cursor: not-allowed;;
+  cursor: not-allowed;
+  ;
 }
 
 /************************ MultiCarousel **************************************************/
@@ -1136,116 +1152,141 @@ footer #social-footer i:hover {
   margin: 6em;
 }
 
-.vertical-middle{
+.vertical-middle {
   display: flex;
   align-items: center;
 }
+
 /************************ MultiCarousel **************************************************/
-.title-div{
+.title-div {
   text-align: center;
   background-color: #ff360080;
 }
-.title-div h1{
+
+.title-div h1 {
   font-family: 'Entezar3' !important;
   margin-bottom: 0px;
   text-shadow: 0 0 12px #ffffbe;
   color: #ffffffb3;
 }
-.title-div a{
+
+.title-div a {
   text-decoration: none;
 }
-.title-div:hover h1{
+
+.title-div:hover h1 {
   color: #ffffff;
 }
-#classes{
+
+#classes {
   text-align: center;
   position: relative;
 }
-#classes .on-img{
+
+#classes .on-img {
   position: absolute;
   bottom: 2em;
   left: 50%;
 }
-#classes .on-img a{
+
+#classes .on-img a {
   position: relative;
-   left: -50%;
+  left: -50%;
 }
 
-.index-player{
+.index-player {
   direction: ltr;
   margin-top: 6em;
   margin-bottom: 4em;
 }
-.news-line,.book-line,.cd-line{
-  padding:8em;
+
+.news-line,
+.book-line,
+.cd-line {
+  padding: 8em;
 }
-.news-line .news-div{
-background-color: #ffffff33;padding: 3px;clear: both;border-radius: 3px;
-position: relative;
+
+.news-line .news-div {
+  background-color: #ffffff33;
+  padding: 3px;
+  clear: both;
+  border-radius: 3px;
+  position: relative;
 }
-.news-content{
+
+.news-content {
   margin: 1em;
 }
-.news-content h4{
+
+.news-content h4 {
   font-family: 'Nazanin';
   font-weight: bold;
 }
-.news-content p{
+
+.news-content p {
   font-family: 'Yekan';
   font-size: 13px;
   text-align: justify;
   line-height: 16px;
 }
-.news-content span{
+
+.news-content span {
   display: block;
   text-align: left;
   font-family: 'Yekan';
   font-size: 12px;
 }
 
-.news-div::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all .35s ease 0s;
-    z-index: 2;
-    transition: all 1s ease 0s;
+.news-div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .35s ease 0s;
+  z-index: 2;
+  transition: all 1s ease 0s;
 }
 
 .news-div:hover::before {
-    opacity: 1;
-    transition: all 1s ease 0s;
+  opacity: 1;
+  transition: all 1s ease 0s;
 }
-.news-line a{
-  color:white;
+
+.news-line a {
+  color: white;
   text-decoration: none;
 }
-.book-line .col{
+
+.book-line .col {
   padding-right: 0;
 }
-.book-line, .cd-line{
+
+.book-line,
+.cd-line {
   padding-top: 5em;
   padding-bottom: 5em;
 }
-.cd-line p{
+
+.cd-line p {
   font-family: 'Nazanin';
   font-size: 20px;
   font-weight: bold;
   padding-top: 1em;
 }
-.cd-line img{
+
+.cd-line img {
   box-shadow: 0 5px 2px #000000b3;
 }
 
-.cd-line a i{
+.cd-line a i {
   font-size: 25px;
 }
-.site-btn{
+
+.site-btn {
   font-family: 'Terrafic';
   background-color: #ff240091;
   border-color: #ff240091;
@@ -1256,72 +1297,91 @@ position: relative;
   padding: 8px 20px;
   font-size: 20px;
 }
+
 .site-btn:hover {
   background-color: #ff2400a5;
   border-color: #ff2400a5;
 }
-.site-btn.buy-btn{
+
+.site-btn.buy-btn {
   position: relative;
   padding-right: 50px;
 }
-.site-btn.buy-btn i{
+
+.site-btn.buy-btn i {
   position: absolute;
-right: 15px;
-top: 25%;
+  right: 15px;
+  top: 25%;
 }
 
-.book-div{
+.book-div {
   background-color: #131313;
   padding: 5px 5px 0 5px;
   border-radius: 3px;
 }
-.book-div .site-btn.buy-btn{
+
+.book-div .site-btn.buy-btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-#store{
+
+#store {
   padding-bottom: 5em;
 }
+
 .news-content.text-center p,
-.news-content.text-center span{
+.news-content.text-center span {
   text-align: center;
 }
-.news-line-title{
+
+.news-line-title {
   font-size: 18px;
   font-weight: bold;
   font-family: 'Nazanin';
   text-align: center;
 }
-.news-line-title h4{
+
+.news-line-title h4 {
   padding-bottom: .85em;
 }
-.news-content.text-center h4{
+
+.news-content.text-center h4 {
   font-size: 18px;
 }
-.myplayer img{
-  width:100%;border: 6px solid #ffffff40;box-shadow: 0 5px 2px #000000b3;
+
+.myplayer img {
+  width: 100%;
+  border: 6px solid #ffffff40;
+  box-shadow: 0 5px 2px #000000b3;
 }
-.myplayer .player-btn{
-  position:absolute;left:50%;
+
+.myplayer .player-btn {
+  position: absolute;
+  left: 50%;
 }
-.myplayer .player-btn i{
-  position: relative;left: -50%;font-size: 4em;
+
+.myplayer .player-btn i {
+  position: relative;
+  left: -50%;
+  font-size: 4em;
 }
-.myplayer .player-btn i.fa-pause{
-  display:none;
-  transition: all 1s ease 0s;
-}
-.myplayer:hover .player-btn i.fa-pause{
-  display:block;
+
+.myplayer .player-btn i.fa-pause {
+  display: none;
   transition: all 1s ease 0s;
 }
 
-#song-list{
+.myplayer:hover .player-btn i.fa-pause {
+  display: block;
+  transition: all 1s ease 0s;
+}
+
+#song-list {
   margin-top: 5em;
-  margin-bottom : 5em;
+  margin-bottom: 5em;
 }
 
-#song-list .on-song{
+#song-list .on-song {
   margin: 7px;
   background-color: #ffffff12;
   border: 1px solid #0003;
@@ -1331,63 +1391,79 @@ top: 25%;
   font-family: 'Nazanin';
   transition: all 1s ease 0s;
 }
-#song-list a:nth-child(even) .on-song{
+
+#song-list a:nth-child(even) .on-song {
   background-color: #ffffff33;
   border: 1px solid #0004;
   transition: all 1s ease 0s;
 }
-#song-list a.active .on-song{
+
+#song-list a.active .on-song {
   background-color: #0008;
 }
-#song-list a:hover .on-song{
+
+#song-list a:hover .on-song {
   background-color: #ffffff53;
   transition: all 1s ease 0s;
 }
-#song-list .on-song h4.song-name{
-  color:#fe6114;
+
+#song-list .on-song h4.song-name {
+  color: #fe6114;
   font-weight: bold;
   padding-right: 10px;
 }
-#song-list .on-song h4.song-name span{
-   font-size: 1rem;
-   padding-right: 10px;
-   font-weight: normal;
+
+#song-list .on-song h4.song-name span {
+  font-size: 1rem;
+  padding-right: 10px;
+  font-weight: normal;
 }
-#song-list .on-song .description{
+
+#song-list .on-song .description {
   line-height: 0;
   padding-right: 11px;
 }
-#song-list a{
+
+#song-list a {
   text-decoration: none;
 }
-.ltr-direction{
+
+.ltr-direction {
   direction: ltr;
 }
+
 #song-list .english-title,
-#song-list .song-rate{
+#song-list .song-rate {
   opacity: 0.7;
 }
-#song-list .on-song h4{
+
+#song-list .on-song h4 {
   margin-bottom: 0;
 }
-#song-list .pic-div{
+
+#song-list .pic-div {
   padding: 5px;
   text-align: left;
 }
-#song-list .pic-div img{
-  width:75%;
+
+#song-list .pic-div img {
+  width: 75%;
 }
-.music-btn i{
-    padding-left: 5px;
+
+.music-btn i {
+  padding-left: 5px;
 }
-.music-btn .music-icon{
+
+.music-btn .music-icon {
   padding: 14px;
 }
-.music-btn .music-icon i{
+
+.music-btn .music-icon i {
   padding: 0;
 }
-.music-name-top{
+
+.music-name-top {
   margin-right: 4em;
-font-family: 'Yekan';
-opacity: 0.7;
+  font-family: 'Yekan';
+  opacity: 0.7;
 }
