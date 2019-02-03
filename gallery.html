@@ -17,8 +17,7 @@
   <div class="blur-box">
     <div class="blur-content">
       <nav class="navbar navbar-expand-lg navbar-light" style="direction:rtl">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
@@ -72,6 +71,7 @@
       <section id="gallery">
 
         <div class="container">
+          <!--
           <div class="row justify-content-center">
             <div id="filters" class="btn-group" role="group" style="direction:ltr">
               <button class="btn btn-lg btn-primary" data-filter="*">همه</button>
@@ -84,11 +84,11 @@
               <button class="btn btn-lg btn-primary" data-sort-by="original-order">جدید</button>
               <button class="btn btn-lg btn-primary" data-sort-by="symbol">قدیم</button>
             </div>
-          </div>
+          </div>-->
 
-          <div class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav" style="width: 100%;direction: rtl;">
+          <!--<div class="navbar navbar-expand-md navbar-fixed-top  main-nav" style="width: 100%;direction: rtl;">
             <div class="container">
-              <ul class="nav navbar-nav mx-auto">
+              <ul  id="filters" class="nav navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link" href="#">همه</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">گروهی</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">کنسرت</a></li>
@@ -101,6 +101,28 @@
                   <a class="nav-link" href="#">تصادفی</a>
                 </li>
               </ul>
+            </div>
+          </div>-->
+
+          <div class="row gallery-grid-btn" style="">
+            <div class="col">
+              <button class="btn btn-link active" data-filter="*"><i class="fas fa-images"></i> همه</button>
+            </div>
+
+            <div class="col">
+              <button class="btn btn-link" data-filter="*"><i class="fas fa-guitar"></i> گیتار</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-link" data-filter="*"><i class="fas fa-star"></i> سایر</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-link active" data-filter="*"><i class="fas fa-calendar-plus"></i> جدیدتر</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-link" data-filter="*"><i class="fas fa-calendar-minus"></i> قدیمی</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-link" data-filter="*"><i class="fas fa-random"></i> اتفاقی</button>
             </div>
           </div>
 
@@ -471,7 +493,7 @@
     });
 
     // layout Isotope after each image loads
-    $grid.imagesLoaded().progress(function () {
+    $grid.imagesLoaded().progress(function() {
       $grid.isotope('layout');
     });
 
@@ -479,19 +501,19 @@
     // filter functions
     var filterFns = {
       // show if number is greater than 50
-      numberGreaterThan50: function () {
+      numberGreaterThan50: function() {
         var number = $(this).find('.number').text();
         return parseInt(number, 10) > 50;
       },
       // show if name ends with -ium
-      ium: function () {
+      ium: function() {
         var name = $(this).find('.name').text();
         return name.match(/ium$/);
       }
     };
 
     // bind filter button click
-    $('#filters').on('click', 'button', function () {
+    $('#filters').on('click', 'button', function() {
       var filterValue = $(this).attr('data-filter');
       // use filterFn if matches value
       filterValue = filterFns[filterValue] || filterValue;
@@ -501,7 +523,7 @@
     });
 
     // bind sort button click
-    $('#sorts').on('click', 'button', function () {
+    $('#sorts').on('click', 'button', function() {
       var sortByValue = $(this).attr('data-sort-by');
       $grid.isotope({
         sortBy: sortByValue
@@ -509,9 +531,9 @@
     });
 
     // change is-checked class on buttons
-    $('.btn-group').each(function (i, buttonGroup) {
+    $('.btn-group').each(function(i, buttonGroup) {
       var $buttonGroup = $(buttonGroup);
-      $buttonGroup.on('click', 'button', function () {
+      $buttonGroup.on('click', 'button', function() {
         $buttonGroup.find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
       });
@@ -520,7 +542,7 @@
 
 
 
-    $(document).ready(function () {
+    $(document).ready(function() {
       $('#grid-items').lightGallery();
     });
   </script>

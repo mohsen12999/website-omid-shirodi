@@ -15,6 +15,16 @@
 - [ ] poet and poem page
 - [ ] site tour video for help
 
+کتاب
+تماس
+ورود
+کنسرت
+ویدئو
+اشخاص
+همکاران یا همکاری
+راهنمای سایت
+درباره وبسایت
+
 #### Back-end
 
 - [ ] play music counter

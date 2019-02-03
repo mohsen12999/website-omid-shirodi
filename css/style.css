@@ -191,7 +191,6 @@ body {
   }
 }
 
-
 .main-menu.nav li h4 {
   font-weight: bold;
 }
@@ -201,6 +200,12 @@ header h1 {
   /*font-size: 3.1em;*/
   margin: 1.15em auto;
   /*text-shadow: 0 0 12px #ffffbe;*/
+}
+
+header h1.outline {
+  font-family: 'Nazanin Outline';
+  font-size: 4.1em;
+  text-shadow: 0 0 12px #ffffbe;
 }
 
 header p,
@@ -230,20 +235,15 @@ header a:hover {
   position: relative;
   border: 6px solid #ffffff80;
 }*/
-
 header .imgDiv {
   padding-left: 0;
   text-align: left;
 }
 
-
-
-
 .searchbar {
   margin-bottom: auto;
   margin-top: auto;
   height: 60px;
-
   border-radius: 30px;
   padding: 10px;
 }
@@ -331,7 +331,6 @@ section .title li:hover h1 {
   text-shadow: 0px 1px 24px white;
   transition: all 700ms ease-in-out;
 }
-
 
 #music {
   margin-top: 9em;
@@ -539,7 +538,6 @@ section .row.first {
 }
 
 /*********************** Demo - 14 *******************/
-
 /*********************** effect sadie *******************/
 figure.effect-sadie {
   position: relative;
@@ -616,7 +614,6 @@ figure.effect-sadie img {
 }
 
 /*********************** effect sadie *******************/
-
 a.btn.more {
   margin: 2em auto;
   font-size: 40px;
@@ -658,7 +655,6 @@ a.btn.more:hover {
 
 #counter .time .desc {
   font-size: 25px;
-
 }
 
 #counter .nav-item {
@@ -784,7 +780,6 @@ a.btn.more:hover {
 #news {
   margin-bottom: 8em;
 }*/
-
 #news .row.news-row {
   margin: 2em 0;
   padding: 10px 0;
@@ -809,7 +804,6 @@ a.btn.more:hover {
 #news .row .desc {
   padding: 1.5em 1em 1em 1em;
   font-family: 'Traffic';
-
 }
 
 #news .row .month {
@@ -916,9 +910,7 @@ footer #social-footer i:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
 /******************* Song Page ******************************************/
-
 .blur-box {
   position: relative;
   overflow: hidden;
@@ -937,12 +929,10 @@ footer #social-footer i:hover {
   position: absolute;
   filter: blur(30px);
   -webkit-filter: blur(30px);
-
   width: 110%;
   height: 110%;
   top: -5%;
   left: -5%;
-
   background-position: center;
   background-size: cover;
   opacity: 0.7;
@@ -1063,7 +1053,6 @@ footer #social-footer i:hover {
 .download-btn {
   text-align: center;
 }*/
-
 .download-btn {
   font-family: 'Terrafic';
   background-color: #ff240091;
@@ -1081,7 +1070,6 @@ footer #social-footer i:hover {
 }
 
 /************************ MultiCarousel **************************************************/
-
 .MultiCarousel {
   float: left;
   overflow: hidden;
@@ -1112,7 +1100,6 @@ footer #social-footer i:hover {
   position: absolute;
   border-radius: 50%;
   /*top: calc(50% - 20px);*/
-
   top: calc(50% - 61px);
   font-size: 70px;
   text-shadow: 2px 2px 7px black;
@@ -1138,7 +1125,6 @@ footer #social-footer i:hover {
 }
 
 /************************ MultiCarousel **************************************************/
-
 .item {
   padding: 10px;
 }
@@ -1212,6 +1198,7 @@ footer #social-footer i:hover {
   clear: both;
   border-radius: 3px;
   position: relative;
+
 }
 
 .news-content {
@@ -1466,4 +1453,199 @@ footer #social-footer i:hover {
   margin-right: 4em;
   font-family: 'Yekan';
   opacity: 0.7;
+}
+
+.music-description p i {
+  font-size: 13px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.music-description p a {
+  font-size: 21px !important;
+  color: red;
+}
+
+.music-icon-btn {
+  font-family: 'agency fb';
+  text-align: center;
+}
+
+.music-icon-btn table {
+  margin: auto;
+}
+
+.music-icon-btn td {
+  padding: 1em 2.15em;
+}
+
+.music-icon-btn td a {
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.music-icon-btn i {
+  display: block;
+  font-size: 2em;
+}
+
+.music-icon-btn p {
+  padding-top: 1em;
+}
+
+.music-icon-btn td:hover i.fa-heart {
+  color: red;
+  font-weight: 900;
+  transform: scale(1.4);
+  transition: all 1s ease 0s;
+}
+
+.music-icon-btn i.fa-heart {
+  transition: all 1s ease 0s;
+}
+
+.gallery-grid-btn {
+  margin-top: 5em;
+  margin-bottom: 2em;
+  direction: rtl;
+}
+
+.gallery-grid-btn .btn {
+  color: white;
+  opacity: 0.7;
+  transition: all 1s ease 0s;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Yekan';
+  text-shadow: 0 1px 0 black;
+}
+
+.gallery-grid-btn .btn:hover {
+  opacity: 1;
+  transition: all 1s ease 0s;
+}
+
+.gallery-grid-btn .btn i {
+  padding-left: 6px;
+}
+
+.gallery-grid-btn .btn.active {
+  color: orange;
+}
+
+.page-description {
+  background: #ffffffb3;
+  /*padding-top: 2em;*/
+  padding-bottom: 2em;
+  direction: rtl;
+}
+
+.page-description .first-row {
+  font-family: 'Yekan';
+  padding-top: 1.2em;
+}
+.page-description .first-container{
+  position: relative;
+
+}
+.page-description .first-container>i{
+  position: absolute;
+  top: -4px;
+  font-size: 52px;
+  right: 0;
+}
+.page-description p {
+  color: black;
+  text-shadow: 0 0 1px white;
+  font-family: 'Terrafic';
+  font-size: 26px;
+  text-align: justify;
+}
+
+.page-description .breadcrumb {
+  background-color: inherit;
+  padding-right: 3rem;
+}
+.page-description .breadcrumb a{
+  color: #ff7620;
+  text-decoration: none;
+}
+
+.page-description .time{
+  padding: .75rem 0;
+  text-align: left;
+}
+.page-description .time span{
+  padding-right: 1em;
+  color: #0006;
+}
+.page-description .time i{
+  padding-left: 6px;
+}
+.page-description .tag{
+  color: #8c4131e6;
+}
+.page-description .tag a{
+  font-style: italic;
+  color: #985959e6;
+  font-size: 23px;
+}
+
+#online-register{
+  margin-top:3em;
+  margin-bottom: 3em;
+  color: #e0e0e0;
+  text-shadow: 0 1px 0 black;
+}
+#online-register h3{
+  font-family: 'Nazanin';
+}
+#online-register p{
+  font-size: 22px;
+  font-family: 'Terrafic';
+}
+#schools{
+  direction: rtl;margin: 3em 18em;
+}
+#schools .one-school{
+  padding:5px;
+  background-color: #ffffff4d;
+  color:#e0e0e0;
+  text-align: 0 1px 0 black;
+  font-family: 'Yekan';
+}
+#schools .one-school .school-desc{
+  padding: 1em;
+}
+#schools .one-school .school-desc p{
+  font-size: 18px;
+}
+#schools .one-school .school-desc .number{
+  text-align: left;
+  direction: ltr;
+}#schools .one-school .school-desc .number span{
+  display: block;
+}
+#classes .news-line{
+  direction: rtl;padding:0;
+  margin-top:6em;
+  margin-bottom: 3em;
+}
+#classes .news-line .col{
+  padding: 5px;
+}
+#classes .news-content p {
+    font-family: 'Terrafic';
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22px;
+    color: #ffffffe6;
+    text-shadow: 0 1px 0 black;
+}
+#classes .news-line .news-div{
+  height: 100%;
+}
+#classes{
+  margin-bottom: 6em;
 }
