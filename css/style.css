@@ -1162,18 +1162,18 @@ footer #social-footer i:hover {
   color: #ffffff;
 }
 
-#classes {
+#classes-banner {
   text-align: center;
   position: relative;
 }
 
-#classes .on-img {
+#classes-banner .on-img {
   position: absolute;
   bottom: 2em;
   left: 50%;
 }
 
-#classes .on-img a {
+#classes-banner .on-img a {
   position: relative;
   left: -50%;
 }
@@ -1642,6 +1642,11 @@ footer #social-footer i:hover {
 
 #schools .one-school .school-desc .number span {
   display: block;
+}
+
+#classes {
+  text-align: center;
+  position: relative;
 }
 
 #classes .news-line {
