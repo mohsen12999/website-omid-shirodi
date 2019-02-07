@@ -34,3 +34,16 @@
 
 https://isotope.metafizzy.co/
 http://sachinchoolur.github.io/lightGallery/demos/index.html
+
+
+name
+mobile
+address-
+email-
+
+entekhab rooz va sat
+s@ grefte shode ghabel entekhab nabashand
+
+mablagh
+mahiane 300
+termi 870

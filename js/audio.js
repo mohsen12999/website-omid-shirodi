@@ -9,7 +9,7 @@
 		barHeight: .7,
 	});
 
-	wavesurfer.load('music-file/music-clip.mp3');
+	wavesurfer.load('mp3/music-clip.mp3');
 
 	wavesurfer.on('audioprocess', function () {
 		var clipCurrentTime = wavesurfer.getCurrentTime();
